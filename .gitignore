@@ -1,0 +1,6 @@
+gh-repro
+gh-repro.exe
+*.exe
+*.test
+*.out
+dist/

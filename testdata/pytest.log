@@ -1,0 +1,4 @@
+test-python	Run pytest	2026-11-23T14:00:01.1234567Z ##[group]Run pytest -q
+test-python	Run pytest	2026-11-23T14:00:01.2000000Z ##[endgroup]
+test-python	Run pytest	2026-11-23T14:00:02.1000000Z FAILED tests/test_auth.py::TestToken::test_refresh - AssertionError: expired token ghp_ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890
+test-python	Run pytest	2026-11-23T14:00:02.2000000Z ##[error]Process completed with exit code 1.

@@ -1,0 +1,35 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test-python:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    env:
+      APP_ENV: test
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run pytest
+        env:
+          DATABASE_URL: "sqlite:///:memory:"
+        run: pytest -q
+  test-go:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run unit tests
+        run: go test ./...
+  test-web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - name: Vitest
+        run: npx vitest run
+  test-rust:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cargo test
+        run: cargo test --all-targets

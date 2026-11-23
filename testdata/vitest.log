@@ -1,0 +1,3 @@
+test-web	Vitest	2026-11-23T14:02:01.0000000Z  FAIL  src/auth/session.test.ts > SessionStore > refreshes expired cookie
+test-web	Vitest	2026-11-23T14:02:01.0001000Z AssertionError: expected 401 to be 200
+test-web	Vitest	2026-11-23T14:02:01.0002000Z ##[error]Process completed with exit code 1.

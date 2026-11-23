@@ -1,0 +1,6 @@
+test-go	Run unit tests	2026-11-23T14:01:01.0000000Z === RUN   TestMissingConfigFlagPreRun
+test-go	Run unit tests	2026-11-23T14:01:01.0001000Z --- FAIL: TestMissingConfigFlagPreRun (0.01s)
+test-go	Run unit tests	2026-11-23T14:01:01.0002000Z     root_test.go:42: expected "--config not passed", got "stat not-set"
+test-go	Run unit tests	2026-11-23T14:01:01.0003000Z FAIL
+test-go	Run unit tests	2026-11-23T14:01:01.0004000Z FAIL	github.com/datazip-inc/olake/protocol	0.201s
+test-go	Run unit tests	2026-11-23T14:01:01.0005000Z ##[error]Process completed with exit code 1.
