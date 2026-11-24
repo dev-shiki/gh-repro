@@ -1,5 +1,7 @@
 # gh-repro
 
+[![gh-repro MCP server](https://glama.ai/mcp/servers/dev-shiki/gh-repro/badges/score.svg)](https://glama.ai/mcp/servers/dev-shiki/gh-repro)
+
 **Deterministic 1-line local reproducers from failing GitHub Actions runs — without Docker.**
 
 `gh-repro` reads a failing GitHub Actions run (`gh run view --log-failed`) alongside your `.github/workflows/*.yml`, strips timestamps/ANSI/group noise, redacts accidental tokens, and outputs the exact minimal local command (`pytest`, `go test`, `vitest`, `jest`, `cargo test`) with the failing step's `working-directory` and `env`.
